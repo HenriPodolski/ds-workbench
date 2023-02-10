@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+# example/backup code
+./packages/example-to-copy-from
