@@ -105,4 +105,7 @@ dist
 
 
 # example/backup code
-./packages/example-to-copy-from
+packages/example-to-copy-from
+
+# ide
+.idea

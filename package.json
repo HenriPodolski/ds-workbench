@@ -1,0 +1,23 @@
+{
+  "name": "ds-workbench",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run dev --workspaces",
+    "prebuild": "npm run licenses",
+    "build": "npm run build --workspaces",
+    "storybook": "npm run storybook -w @ds-workbench/components",
+    "build:storybook": "npm run build:storybook -w @ds-workbench/components",
+    "licenses": "rm LEGAL.md && echo '```' >>LEGAL.md 2>&1 && npx license-checker >>LEGAL.md 2>&1 && echo '```' >>LEGAL.md 2>&1 && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "workspaces": [
+    "packages/components"
+  ],
+  "devDependencies": {
+    "license-checker": "^25.0.1"
+  }
+}
